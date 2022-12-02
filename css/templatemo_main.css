@@ -52,8 +52,8 @@ img {
 
 .logo {
   text-align: center;
-  width: 50%;
-  height: 50%;
+  max-width: 50px;
+  max-height: 50px;
 }
 /* Preloader */
 #preloader {
