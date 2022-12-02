@@ -11,16 +11,31 @@
   url("./fonts/origintech.ttf") format("truetype"),
   url("./fonts/origintech.otf") format("opentype"),
 }
+@font-face {
+	font-family: "valorant";
+	src: local ("valorant"),
+  url("./fonts/valorant.ttf") format("truetype"),
+}
+@font-face {
+	font-family: "quantum";
+	src: local ("quantum"),
+  url("./fonts/quantum.otf") format("opentype"),
+}
+@font-face {
+	font-family: "oswald";
+	src: local ("oswald"),
+  url("./fonts/oswald.ttf") format("truetype"),
+}
 body {
     font-size: 1em;
     line-height: 1.4;
-    font-family: 'origintech';
+    font-family: 'oswald';
     font-style: normal; 
     -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
     -webkit-text-size-adjust: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, span, p { font-family: 'origintech'; }
+h1, h2, h3, h4, h5, h6, span, p { font-family: 'oswald'; }
 
 hr {
     display: block;
@@ -35,6 +50,11 @@ img {
     vertical-align: middle;
 }
 
+.logo {
+  text-align: center;
+  width: 50%;
+  height: 50%;
+}
 /* Preloader */
 #preloader {
     position: fixed;
@@ -67,11 +87,13 @@ img {
     color: #fff !important; 
     text-shadow: 0px 2px 3px rgba(0, 0, 0, 1);
 	font-size: 48px;
+  font-family: 'quantum';
 }
 
 .templatemo-site-title a, .templatemo-site-title a:hover { 
 	color: #fff;
 	text-decoration: none;
+
 }
 
 img.slide {
@@ -109,7 +131,7 @@ img.slide {
 }
 
 .templatemo-content section {
-    font-family: 'origintech';
+    font-family: 'oswald';
     position: relative; 
     overflow: hidden;
     top: 0; 
@@ -128,11 +150,11 @@ img.slide {
 
 .templatemo-content h2 {
     color: #000;
-    font-family: 'origintech';
+    font-family: 'oswald';
 }
 
 .templatemo-content p {
-    font-family: 'origintech';
+    font-family: 'oswald';
     color: #000;
     font-size: 16px;
 }
@@ -275,7 +297,7 @@ img.slide {
 .group { zoom:1; /* For IE 6/7 */ }
 
 .btn {
-  background-color: #800040;
+  background-color: #108080;
   -webkit-border-radius: 15px;
   border-radius: 15px;
   border: none;
@@ -290,16 +312,16 @@ img.slide {
 }
 @keyframes glowing {
   0% {
-    background-color: #fb0280;
-    box-shadow: 0 0 5px #fb0280;
+    background-color: #17999a;
+    box-shadow: 0 0 5px #17999a;
   }
   50% {
-    background-color: #800040;
-    box-shadow: 0 0 20px #800040;
+    background-color: #108080;
+    box-shadow: 0 0 20px #108080;
   }
   100% {
-    background-color: #fb0280;
-    box-shadow: 0 0 5px #fb0280;
+    background-color: #17999a;
+    box-shadow: 0 0 5px #17999a;
   }
 }
 
@@ -329,7 +351,7 @@ img.slide {
 }
 
 .button {
-    background-color: #800040;
+    background-color: #108080;
     -webkit-border-radius: 60px;
     border-radius: 60px;
     border: none;
@@ -344,16 +366,16 @@ img.slide {
   }
   @keyframes glowing {
     0% {
-      background-color: #fb0280;
-      box-shadow: 0 0 5px #fb0280;
+      background-color: #17999a;
+      box-shadow: 0 0 5px #17999a;
     }
     50% {
-      background-color: #800040;
-      box-shadow: 0 0 20px #800040;
+      background-color: #108080;
+      box-shadow: 0 0 20px #108080;
     }
     100% {
-      background-color: #fb0280;
-      box-shadow: 0 0 5px #fb0280;
+      background-color: #17999a;
+      box-shadow: 0 0 5px #17999a;
     }
   }
 
@@ -471,7 +493,6 @@ img {vertical-align: middle; border-radius: 15px;}
 .new__overlay {
   width: 250px;
   height: 250px;
-  background-color: var(--first-color);
   border-radius: 50%;
   position: absolute;
   top: -5rem;
@@ -483,13 +504,12 @@ img {vertical-align: middle; border-radius: 15px;}
   position: relative;
   width: 70%;
   max-height: 180px;
-  margin-bottom: var(--mb-2);
+  margin-bottom: 30px;
   transition: .3s;
 }
 
 .new__price {
   text-align: start;
-  text-shadow: 0px 2px 3px #fb0280;
 }
 
 .new__title {
