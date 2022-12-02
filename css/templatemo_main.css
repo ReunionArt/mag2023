@@ -404,6 +404,9 @@ img.slide {
     }
   }
   
+  .button:hover {
+    color: #eeeeee;
+  }
   // Styling
   
   section {
