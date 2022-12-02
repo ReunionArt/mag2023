@@ -1,15 +1,26 @@
-body, html { overflow-x: hidden; }
-
+@font-face {
+	font-family: "gravitation";
+	src: local("gravitation"),
+  url("./fonts/gravitation.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+	font-family: "origintech";
+	src: local ("origintech"),
+  url("./fonts/origintech.ttf") format("truetype"),
+  url("./fonts/origintech.otf") format("opentype"),
+}
 body {
     font-size: 1em;
     line-height: 1.4;
-    font-family: 'Helvetica Neue';
+    font-family: 'origintech';
     font-style: normal; 
     -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
     -webkit-text-size-adjust: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, span, p { font-family: 'Helvetica Neue'; }
+h1, h2, h3, h4, h5, h6, span, p { font-family: 'origintech'; }
 
 hr {
     display: block;
@@ -98,7 +109,7 @@ img.slide {
 }
 
 .templatemo-content section {
-    font-family: 'Helvetica Neue';
+    font-family: 'origintech';
     position: relative; 
     overflow: hidden;
     top: 0; 
@@ -117,11 +128,11 @@ img.slide {
 
 .templatemo-content h2 {
     color: #000;
-    font-family: 'Helvetica Neue';
+    font-family: 'origintech';
 }
 
 .templatemo-content p {
-    font-family: 'Helvetica Neue';
+    font-family: 'origintech';
     color: #000;
     font-size: 16px;
 }
@@ -145,7 +156,7 @@ img.slide {
 
 
 #menu-list > li > a {
-    font-family: 'Helvetica Neue'; 
+    font-family: 'origintech', sans-serif;; 
     padding: 10px 0 10px 30px; 
     text-decoration: none; 
     display: block;
